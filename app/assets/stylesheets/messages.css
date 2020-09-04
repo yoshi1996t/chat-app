@@ -40,7 +40,6 @@
 
 .rooms {
   background-color: #2f3e51;
-  background-color:;
   height: calc(100vh - 100px);
   padding: 0 20px;
   overflow: scroll;
@@ -64,6 +63,28 @@
 .chat-header {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* これはいらない数値が決められている */
+}
+
+.header-title {
+  font-size: 24px;
+  color: #333;
+  margin-top: 36px;
+}
+
+.header-exit {
+  margin-top: 40px;
+}
+
+.header-exit a {
+  padding: 20px;
+  margin-top: 40px;
+  color: darkred;
+  border: 1px solid darkred;
+  text-decoration: none;
 }
 
 .messages {
@@ -72,8 +93,72 @@
   padding: 46px 40px 0;
 }
 
+.top-massage {
+  display: flex;
+}
+
+.message {
+  margin: 10px 0;
+}
+
+.name-message {
+  font-size: 16px;
+  color: #434a54;
+  padding-right: 10px;
+}
+
+.date-message {
+  font-size: 12px;
+  color: #999;
+}
+
+.comment-message {
+  font-size: 14px;
+  color: #434a54;
+}
+
+
+
 .form {
   background-color: #DDDDDD;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
+}
+
+.left-form {
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.form-message {
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  border-style: none;
+}
+
+.form-submit {
+  height: 50px;
+  background-color: #38aef0;
+  padding:  0 20px;
+  margin-left: 15px;
+  font-size: 16px;
+  color: white;
+  border-style: none;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
