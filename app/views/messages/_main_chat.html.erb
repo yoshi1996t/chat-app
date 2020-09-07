@@ -12,36 +12,7 @@
 </div>
 
 <div class="messages">
-  <div class="message">
-    <div class="top-massage">
-      <div class="name-message">
-      yoshi
-      </div>
-      <div class="date-message">
-      2020/09/03
-      </div>
-    </div>
-    <div class="under-message">
-      <div class="comment-message">
-      おはよう
-      </div>
-    </div>
-  </div>
-  <div class="message">
-    <div class="top-massage">
-      <div class="name-message">
-      yui
-      </div>
-      <div class="date-message">
-      2020/09/04
-      </div>
-    </div>
-    <div class="under-message">
-      <div class="comment-message">
-      今晩わ
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 
