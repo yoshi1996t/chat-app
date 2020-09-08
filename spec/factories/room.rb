@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :room do
-    name {Faker::Team.name
+    name {Faker::JapaneseMedia::OnePiece.location
     }
   end
 end
